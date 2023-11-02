@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass ./sass/main.scss asset/index.css",
+    "dev": "sass -w ./sass/main.scss asset/index.css"
+  },
+
+  "dependencies": {
+    "sass": "^1.69.5"
+  }
+}
