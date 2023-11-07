@@ -1,0 +1,32 @@
+footer {
+    background-color: $footer-background;
+    padding: 1.38rem 1.56rem;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .logo_footer {
+        width: 8.59888rem;
+        height: 1.6875rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4375rem;
+
+        &_link > a {
+            display: flex;
+            flex-direction: row;
+            gap: 0.69rem;
+            color: $cardtxt-background;
+        }
+    }
+}

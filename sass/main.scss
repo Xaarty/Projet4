@@ -1,5 +1,10 @@
-$black: white;
+@import "./utils/variables.scss";
+@import "./base/normalize.scss";
+@import "./layouts/footer.scss";
 
-body{
-    background-color: $black;
+* {
+    font-family: 'Roboto', sans-serif;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }

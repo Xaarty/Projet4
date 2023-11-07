@@ -1,5 +1,49 @@
 body {
-  background-color: white;
+  background-color: #FFFFFF;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+footer {
+  background-color: #353535;
+  padding: 1.38rem 1.56rem;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+nav .logo_footer {
+  width: 8.59888rem;
+  height: 1.6875rem;
+}
+nav .logo_footer img {
+  max-width: 100%;
+}
+nav .navbar {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4375rem;
+}
+nav .navbar_link > a {
+  display: flex;
+  flex-direction: row;
+  gap: 0.69rem;
+  color: #FFFFFF;
+}
+
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=index.css.map */
