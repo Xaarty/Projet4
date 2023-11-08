@@ -1,0 +1,25 @@
+.headline {
+    display: flex;
+    flex-direction: column;
+    background: $restaurant-menu-background;
+    align-items: center;
+
+        h1 {
+        display: flex;
+        text-align: center;
+        height: 4.25rem;
+        margin: 2.4rem 3.62rem 0 2.62rem;
+        }
+
+        p {
+            display: flex;
+            font-size: 1.125rem;
+            font-weight: 300;
+            text-align: center;
+            margin: 0 1.62rem 1.69rem 2.12rem;
+        }
+
+        a {
+            margin-bottom: 3.56rem;
+        }
+}
