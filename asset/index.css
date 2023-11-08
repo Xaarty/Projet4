@@ -1,4 +1,6 @@
 body {
+  display: flex;
+  flex-direction: column;
   background-color: #FFFFFF;
 }
 
@@ -12,31 +14,59 @@ a {
 
 footer {
   background-color: #353535;
-  padding: 1.38rem 1.56rem;
+  padding: 1.375rem 1.5625rem;
 }
-
-nav {
+footer nav {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
-nav .logo_footer {
+footer nav .logo_footer {
   width: 8.59888rem;
   height: 1.6875rem;
 }
-nav .logo_footer img {
+footer nav .logo_footer img {
   max-width: 100%;
 }
-nav .navbar {
+footer nav .navbar_footer {
   display: flex;
   flex-direction: column;
   gap: 0.4375rem;
 }
-nav .navbar_link > a {
+footer nav .navbar_footer_link > a {
   display: flex;
   flex-direction: row;
   gap: 0.69rem;
   color: #FFFFFF;
+}
+
+header {
+  width: 100%;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+header nav .navbar_header {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  padding: 0.875rem 0 0.8125rem 0;
+}
+header nav .navbar_header_link {
+  display: flex;
+  align-items: center;
+  width: auto;
+}
+header nav .navbar_header_link > img {
+  width: 12.3125rem;
+  height: 2.25rem;
+}
+header nav .navbar_header_link > a {
+  color: #353535;
+  position: absolute;
+  display: none;
 }
 
 * {
