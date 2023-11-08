@@ -53,6 +53,7 @@ header nav .navbar_header {
   width: 100%;
   justify-content: center;
   padding: 0.875rem 0 0.8125rem 0;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 header nav .navbar_header_link {
   display: flex;
@@ -60,13 +61,29 @@ header nav .navbar_header_link {
   width: auto;
 }
 header nav .navbar_header_link > img {
-  width: 12.3125rem;
-  height: 2.25rem;
+  width: 10.125rem;
+  height: auto;
 }
 header nav .navbar_header_link > a {
   color: #353535;
   position: absolute;
   display: none;
+}
+header form {
+  display: flex;
+  flex-direction: row;
+  background: #EAEAEA;
+  gap: 1.0625rem;
+  align-items: center;
+  justify-content: center;
+  height: 3.125rem;
+}
+header form input {
+  border: none;
+  background-color: #EAEAEA;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 6.8125rem;
 }
 
 * {
