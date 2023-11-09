@@ -1,0 +1,45 @@
+.card {
+    display: flex;
+    align-items: center;
+
+    &_number {
+        position: absolute;
+        i {
+            color: $main-color;
+            position: absolute;
+        }
+
+        i + i {
+            color: $cardtxt-background;
+            margin-left: 0.5rem;
+            position: absolute;
+        }
+    }
+    
+
+    &_content {
+        display: flex;
+        gap: 1.69rem;
+        margin-left: 0.78rem;
+        height: 4.52369rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        border-radius: 1.25rem;
+        background: var(--Background, #F6F6F6);
+        box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+
+        p {
+            width: 13.1875rem;
+        }
+
+        i {
+            margin-left: 2.09rem;
+            color: $icone_color;
+        }
+
+        .fa-store {
+            color: $main-color;
+        }
+    }
+}
