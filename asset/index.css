@@ -1,3 +1,10 @@
+* {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   display: flex;
   flex-direction: column;
@@ -142,11 +149,53 @@ header form input {
   width: 6.8125rem;
 }
 
-* {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.how_to {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 1.25rem 4.25rem 1.25rem;
+  gap: 1.56rem;
+}
+.how_to h2 {
+  margin-bottom: 0.6rem;
+}
+
+.card {
+  display: flex;
+  align-items: center;
+}
+.card_number {
+  position: absolute;
+}
+.card_number i {
+  color: #9356DC;
+  position: absolute;
+}
+.card_number i + i {
+  color: #FFFFFF;
+  margin-left: 0.5rem;
+  position: absolute;
+}
+.card_content {
+  display: flex;
+  gap: 1.69rem;
+  margin-left: 0.78rem;
+  height: 4.52369rem;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.25rem;
+  background: var(--Background, #F6F6F6);
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
+}
+.card_content p {
+  width: 13.1875rem;
+}
+.card_content i {
+  margin-left: 2.09rem;
+  color: #7E7E7E;
+}
+.card_content .fa-store {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=index.css.map */

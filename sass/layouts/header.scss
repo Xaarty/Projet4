@@ -18,19 +18,18 @@ header {
                 align-items: center;
                 width: auto;
                 
-            }
-
-            &_link > img {
+                img {
                 
-                width: 10.125rem;
-                height: auto;
-                
-            }
+                    width: 10.125rem;
+                    height: auto;
+                    
+                }
 
-            &_link > a {
-                color: $footer-background;
-                position: absolute;
-                display: none;
+                a {
+                    color: $footer-background;
+                    position: absolute;
+                    display: none;
+                }
             }
         }
     }

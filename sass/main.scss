@@ -3,10 +3,6 @@
 @import "./base/headline.scss";
 @import "./layouts/footer.scss";
 @import "./layouts/header.scss";
-
-* {
-    font-family: 'Roboto', sans-serif;
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-}
+@import "./base/restaurants.scss";
+@import "./base/how_to.scss";
+@import "./components/card.scss";
