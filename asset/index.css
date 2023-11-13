@@ -123,11 +123,11 @@ header nav .navbar_header_link {
   align-items: center;
   width: auto;
 }
-header nav .navbar_header_link > img {
+header nav .navbar_header_link img {
   width: 10.125rem;
   height: auto;
 }
-header nav .navbar_header_link > a {
+header nav .navbar_header_link a {
   color: #353535;
   position: absolute;
   display: none;
@@ -164,16 +164,18 @@ header form input {
   align-items: center;
 }
 .card_number {
+  display: flex;
   position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: #9356DC;
+  justify-content: center;
+  align-items: center;
 }
-.card_number i {
-  color: #9356DC;
-  position: absolute;
-}
-.card_number i + i {
+.card_number span {
+  font-size: 0.88638rem;
   color: #FFFFFF;
-  margin-left: 0.5rem;
-  position: absolute;
 }
 .card_content {
   display: flex;
