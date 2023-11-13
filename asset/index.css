@@ -112,16 +112,19 @@ header nav {
   width: 100%;
 }
 header nav .navbar_header {
-  display: flex;
+  display: grid;
+  grid-template: auto/auto auto;
   width: 100%;
-  justify-content: center;
-  padding: 0.875rem 0 0.8125rem 0;
+  padding: 0.875rem 0 0.8125rem 1.0625rem;
   box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 }
 header nav .navbar_header_link {
+  grid-row: 1;
+  grid-column: 1/-1;
   display: flex;
   align-items: center;
   width: auto;
+  justify-self: flex-start;
 }
 header nav .navbar_header_link img {
   width: 10.125rem;
@@ -131,6 +134,9 @@ header nav .navbar_header_link a {
   color: #353535;
   position: absolute;
   display: none;
+}
+header nav .navbar_header_link + .navbar_header_link {
+  justify-self: center;
 }
 header form {
   display: flex;
