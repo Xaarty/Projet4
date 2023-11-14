@@ -103,6 +103,12 @@ footer nav .navbar_footer_link > a {
   color: #FFFFFF;
   align-items: center;
 }
+footer nav .navbar_footer_link > a p {
+  font-weight: 400;
+}
+footer nav .navbar_footer_link > a i + p {
+  font-weight: 500;
+}
 
 header {
   width: 100%;
