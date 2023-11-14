@@ -56,6 +56,7 @@ p {
   flex-direction: column;
   background: #F6F6F6;
   align-items: center;
+  padding-bottom: 3.56rem;
 }
 .headline h1 {
   display: flex;
@@ -268,6 +269,22 @@ header form input {
 }
 .restaurant_card i {
   margin-top: 0.41rem;
+}
+
+button {
+  width: 13.625rem;
+  height: 3.125rem;
+  border-radius: 1.5625rem;
+  background: linear-gradient(180deg, #FF79DA -11.44%, #9356DC 123.93%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  border-width: 0;
+  color: var(--White, #FFF);
+  text-align: center;
+}
+
+button:hover {
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+  opacity: 85%;
 }
 
 /*# sourceMappingURL=index.css.map */
