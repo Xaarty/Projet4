@@ -58,18 +58,37 @@ p {
   align-items: center;
   padding-bottom: 3.56rem;
 }
+@media (min-width: 768px) {
+  .headline {
+    padding: 1.875rem 0 1.875rem 0;
+    gap: 1.12rem;
+  }
+}
 .headline h1 {
-  display: flex;
   text-align: center;
   height: 4.25rem;
   margin: 2.4rem 3.62rem 0 2.62rem;
 }
+@media (min-width: 768px) {
+  .headline h1 {
+    font-size: 2.5rem;
+    height: 2.9375rem;
+    margin: 0;
+  }
+}
 .headline p {
-  display: flex;
   font-size: 1.125rem;
   font-weight: 300;
   text-align: center;
   margin: 0 1.62rem 1.69rem 2.12rem;
+}
+@media (min-width: 768px) {
+  .headline p {
+    display: flex;
+    height: 2.875rem;
+    margin: 0;
+    align-items: center;
+  }
 }
 .headline a {
   margin-bottom: 3.56rem;
