@@ -294,6 +294,7 @@ header form input {
 }
 
 .heart_button {
+  position: relative;
   display: grid;
   width: 1.375rem;
   height: 1.3125rem;
@@ -301,12 +302,11 @@ header form input {
   border: none;
   height: fit-content;
 }
-.heart_button svg:hover {
-  display: none;
+.heart_button svg {
+  position: absolute;
 }
 .heart_button svg + svg {
   display: none;
-  position: absolute;
 }
 .heart_button svg + svg:hover {
   display: block;
