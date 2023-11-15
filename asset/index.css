@@ -58,18 +58,37 @@ p {
   align-items: center;
   padding-bottom: 3.56rem;
 }
+@media (min-width: 768px) {
+  .headline {
+    padding: 1.875rem 0 1.875rem 0;
+    gap: 1.12rem;
+  }
+}
 .headline h1 {
-  display: flex;
   text-align: center;
   height: 4.25rem;
   margin: 2.4rem 3.62rem 0 2.62rem;
 }
+@media (min-width: 768px) {
+  .headline h1 {
+    font-size: 2.5rem;
+    height: 2.9375rem;
+    margin: 0;
+  }
+}
 .headline p {
-  display: flex;
   font-size: 1.125rem;
   font-weight: 300;
   text-align: center;
   margin: 0 1.62rem 1.69rem 2.12rem;
+}
+@media (min-width: 768px) {
+  .headline p {
+    display: flex;
+    height: 2.875rem;
+    margin: 0;
+    align-items: center;
+  }
 }
 .headline a {
   margin-bottom: 3.56rem;
@@ -201,32 +220,52 @@ header form input {
   flex-direction: column;
   background-color: #F6F6F6;
   padding: 3.38rem 5% 4.12rem 5%;
-  gap: 1.12rem;
+  gap: 1.5rem;
 }
-.restaurants h2 {
-  margin-bottom: 0.38rem;
+@media (min-width: 768px) {
+  .restaurants {
+    padding: 1.875rem 12.5% 1.875rem 12.5%;
+  }
 }
-.restaurants article {
+.restaurants_article {
+  display: flex;
+  flex-direction: column;
+  gap: 1.125rem;
+}
+@media (min-width: 768px) {
+  .restaurants_article {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 3.125rem;
+  }
+}
+.restaurants_article article {
   width: 100%;
   height: 15.6875rem;
   border-radius: 0.9375rem;
   background-color: #FFFFFF;
 }
-.restaurants article a {
+@media (min-width: 768px) {
+  .restaurants_article article {
+    width: 45.37%;
+  }
+}
+.restaurants_article article a {
   display: flex;
   flex-direction: column;
 }
-.restaurants article a .img_badge {
+.restaurants_article article a .img_badge {
   display: flex;
   justify-content: flex-end;
 }
-.restaurants article a .img_badge img {
+.restaurants_article article a .img_badge img {
   height: 10.8775rem;
   width: 100%;
   object-fit: cover;
   border-radius: 0.9375rem 0.9375rem 0 0;
 }
-.restaurants article a .img_badge span {
+.restaurants_article article a .img_badge span {
   display: flex;
   position: absolute;
   width: 5rem;
@@ -245,15 +284,35 @@ header form input {
   display: flex;
   flex-direction: column;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
-  gap: 1.56rem;
+  gap: 1.62rem;
 }
-.how_to h2 {
-  margin-bottom: 0.6rem;
+@media (min-width: 1024px) {
+  .how_to {
+    padding: 3.125rem 0 3.125rem 0;
+    gap: 1.5625rem;
+  }
 }
-
+.how_to_cards {
+  display: flex;
+  flex-direction: column;
+  gap: 1.62rem;
+}
+@media (min-width: 1024px) {
+  .how_to_cards {
+    width: 100%;
+    flex-direction: row;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+}
 .card {
   display: flex;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  .card {
+    width: 20.15538rem;
+  }
 }
 .card_number {
   display: flex;
