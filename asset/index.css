@@ -428,12 +428,16 @@ header form input {
 }
 .heart_button svg {
   position: absolute;
+  opacity: 1;
+}
+.heart_button svg:hover {
+  opacity: 0;
 }
 .heart_button svg + svg {
-  display: none;
+  opacity: 0;
 }
 .heart_button svg + svg:hover {
-  display: block;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=index.css.map */
