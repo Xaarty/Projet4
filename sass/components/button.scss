@@ -26,12 +26,18 @@
     
     svg {
         position: absolute;
-    }
-    svg + svg {
-        display: none;
+        opacity: 1;
+
+        &:hover {
+            opacity: 0;
+        }
     }
 
-    svg + svg:hover {
-        display: block;
+    svg + svg {
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+        }
     }
 }
