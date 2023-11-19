@@ -54,20 +54,19 @@
     display: flex;
     justify-content: space-between;
     padding: 1rem 1.56rem 0.75rem 0.81rem;
-    color: black;
     
-    &_txt {
-        display: flex;
-        flex-direction: column;
-        gap: 0.31rem;
-
-        p {
-            font-size: 1.0625rem;
-            font-weight: 300;
+    a {
+        color: black;
+        
+        .restaurant_card_txt {
+            display: flex;
+            flex-direction: column;
+            gap: 0.31rem;
+    
+            p {
+                font-size: 1.0625rem;
+                font-weight: 300;
+            }
         }
-    }
-
-    i {
-        margin-top: 0.41rem;        
     }
 }

@@ -386,19 +386,18 @@ header form input {
   display: flex;
   justify-content: space-between;
   padding: 1rem 1.56rem 0.75rem 0.81rem;
+}
+.restaurant_card a {
   color: black;
 }
-.restaurant_card_txt {
+.restaurant_card a .restaurant_card_txt {
   display: flex;
   flex-direction: column;
   gap: 0.31rem;
 }
-.restaurant_card_txt p {
+.restaurant_card a .restaurant_card_txt p {
   font-size: 1.0625rem;
   font-weight: 300;
-}
-.restaurant_card i {
-  margin-top: 0.41rem;
 }
 
 .button_exploration {
@@ -427,10 +426,12 @@ header form input {
   position: relative;
   display: grid;
   width: 1.375rem;
-  height: 1.3125rem;
   background: #FFFFFF;
   border: none;
   height: fit-content;
+}
+.heart_button svg {
+  display: block;
 }
 .heart_button svg {
   position: absolute;
@@ -444,6 +445,17 @@ header form input {
 }
 .heart_button svg + svg:hover {
   opacity: 1;
+}
+.heart_button svg + svg {
+  display: none;
+}
+.heart_button:hover svg {
+  position: relative;
+  display: none;
+}
+.heart_button:hover svg + svg {
+  display: block;
+  position: absolute;
 }
 
 /*# sourceMappingURL=index.css.map */

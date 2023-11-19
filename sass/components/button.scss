@@ -27,10 +27,13 @@
     position: relative;
     display: grid;
     width: 1.375rem;
-    height: 1.3125rem;
     background: $cardtxt-background;
     border: none;
     height: fit-content;
+
+    svg {
+        display: block;
+    }
     
     svg {
         position: absolute;
@@ -46,6 +49,22 @@
 
         &:hover {
             opacity: 1;
+        }
+    }
+
+    svg + svg {
+        display: none;
+    }
+
+    &:hover {
+        svg {
+            position: relative;
+            display: none;
+        }
+
+        svg + svg {
+            display: block;
+            position: absolute;
         }
     }
 }
