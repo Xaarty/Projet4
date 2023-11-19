@@ -30,11 +30,10 @@
     background: $cardtxt-background;
     border: none;
     height: fit-content;
-<<<<<<< HEAD
 
     svg {
         display: block;
-=======
+    }
     
     svg {
         position: absolute;
@@ -51,7 +50,6 @@
         &:hover {
             opacity: 1;
         }
->>>>>>> 4bf57ed7b58530cc6ec29d3605a67957e2a7ab5c
     }
 
     svg + svg {
