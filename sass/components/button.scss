@@ -24,14 +24,34 @@
 }
 
 .heart_button {
+    position: relative;
     display: grid;
     width: 1.375rem;
     background: $cardtxt-background;
     border: none;
     height: fit-content;
+<<<<<<< HEAD
 
     svg {
         display: block;
+=======
+    
+    svg {
+        position: absolute;
+        opacity: 1;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+
+    svg + svg {
+        opacity: 0;
+
+        &:hover {
+            opacity: 1;
+        }
+>>>>>>> 4bf57ed7b58530cc6ec29d3605a67957e2a7ab5c
     }
 
     svg + svg {

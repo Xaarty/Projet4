@@ -2,6 +2,10 @@
     display: flex;
     align-items: center;
 
+    @media (min-width: 1024px) {
+        width: 20.15538rem;
+    }
+
     &_number {
         display: flex;
         position: absolute;
