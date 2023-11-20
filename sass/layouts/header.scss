@@ -7,7 +7,7 @@ header {
         height: 3.9375rem;
         width: 100%;
 
-        @media (min-width: 768px) {
+        @include tablet {
             height: 6.02119rem;
         }
 
@@ -19,7 +19,7 @@ header {
             padding: 0.875rem 0 0.8125rem 1.0625rem;
             box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.15);
 
-            @media (min-width: 768px) {
+            @include tablet {
                 height: 6.02119rem;
                 padding: 1.875rem 0 2.00856rem 1.0625rem; 
             }
@@ -37,7 +37,7 @@ header {
                     width: 10.125rem;
                     height: auto;
 
-                    @media (min-width: 768px) {
+                    @include tablet {
                         width: fit-content;
                         max-width: 100%;
                     }
@@ -62,7 +62,7 @@ header {
                 justify-self: center;
                 align-items: end;
 
-                @media (min-width: 768px) {
+                @include tablet {
                     width: 12.5rem;
                     height: 2.13763rem;
                     padding: 0;

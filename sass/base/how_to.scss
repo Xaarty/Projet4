@@ -4,7 +4,7 @@
     padding: 3rem 1.25rem 4.25rem 1.25rem;
     gap: 1.62rem;
     
-    @media (min-width: 1024px) {
+    @include desktop {
         padding: 3.125rem 0 3.125rem 0;
         gap: 1.5625rem;
     }
@@ -14,7 +14,7 @@
         flex-direction: column;
         gap: 1.62rem;
 
-        @media (min-width: 1024px) {
+        @include desktop {
             width: 100%;
             flex-direction: row;
             gap: 1.5rem;
@@ -23,7 +23,7 @@
     }
 
     h2 {
-        @media (min-width: 1024px) {
+        @include desktop {
             
         }
     }

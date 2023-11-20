@@ -5,7 +5,7 @@
     padding: 3.38rem 5% 4.12rem 5%;
     gap: 1.5rem;
 
-    @media (min-width: 768px) {
+    @include tablet {
         padding : 1.875rem 12.5% 1.875rem 12.5%;
     }
 
@@ -14,7 +14,7 @@
         flex-direction: column;
         gap: 1.125rem;
 
-        @media (min-width: 768px) {
+        @include tablet {
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-between;
@@ -28,7 +28,7 @@
             border-radius: 0.9375rem;
             background-color: $cardtxt-background;
 
-            @media (min-width: 768px) {
+            @include tablet {
                 width: 45.37%;
             }
     
