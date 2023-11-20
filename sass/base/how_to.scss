@@ -1,24 +1,23 @@
 .how_to {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    width: 100%;
+    max-width: 1080px;
     padding: 3rem 1.25rem 4.25rem 1.25rem;
-    gap: 1.62rem;
+    row-gap: 1.62rem;
     
-    @include desktop {
-        padding: 3.125rem 0 3.125rem 0;
-        gap: 1.5625rem;
+    @include tablet {
+        padding: 3.125rem 1.25rem;
+        margin: auto;
     }
 
     &_cards {
-        display: flex;
-        flex-direction: column;
-        gap: 1.62rem;
+        display: grid;
+        row-gap: 1.56rem;
 
-        @include desktop {
+        @include tablet {
+            grid-template-columns: auto auto auto;
             width: 100%;
-            flex-direction: row;
-            gap: 1.5rem;
-            justify-content: center;
+            column-gap: 1.5rem;
         }
     }
 
