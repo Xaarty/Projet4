@@ -246,57 +246,60 @@ header form input {
   width: 6.8125rem;
 }
 
-.restaurants {
+.section_restaurants {
+  background-color: #F6F6F6;
+}
+.section_restaurants .restaurants {
   display: flex;
   flex-direction: column;
-  background-color: #F6F6F6;
-  padding: 3.38rem 5% 4.12rem 5%;
+  max-width: 1080px;
+  padding: 3.38rem 1.25rem 4.12rem 1.25rem;
   gap: 1.5rem;
 }
 @media only screen and (min-width: 768px) {
-  .restaurants {
-    padding: 1.875rem 12.5% 1.875rem 12.5%;
+  .section_restaurants .restaurants {
+    margin: auto;
   }
 }
-.restaurants_article {
+.section_restaurants .restaurants_article {
   display: flex;
   flex-direction: column;
   gap: 1.125rem;
 }
 @media only screen and (min-width: 768px) {
-  .restaurants_article {
+  .section_restaurants .restaurants_article {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 3.125rem;
   }
 }
-.restaurants_article article {
+.section_restaurants .restaurants_article article {
   width: 100%;
   height: 15.6875rem;
   border-radius: 0.9375rem;
   background-color: #FFFFFF;
 }
 @media only screen and (min-width: 768px) {
-  .restaurants_article article {
+  .section_restaurants .restaurants_article article {
     width: 45.37%;
   }
 }
-.restaurants_article article a {
+.section_restaurants .restaurants_article article a {
   display: flex;
   flex-direction: column;
 }
-.restaurants_article article a .img_badge {
+.section_restaurants .restaurants_article article a .img_badge {
   display: flex;
   justify-content: flex-end;
 }
-.restaurants_article article a .img_badge img {
+.section_restaurants .restaurants_article article a .img_badge img {
   height: 10.8775rem;
   width: 100%;
   object-fit: cover;
   border-radius: 0.9375rem 0.9375rem 0 0;
 }
-.restaurants_article article a .img_badge span {
+.section_restaurants .restaurants_article article a .img_badge span {
   display: flex;
   position: absolute;
   width: 5rem;
@@ -312,73 +315,70 @@ header form input {
 }
 
 .how_to {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  width: 100%;
+  max-width: 1080px;
   padding: 3rem 1.25rem 4.25rem 1.25rem;
-  gap: 1.62rem;
+  row-gap: 1.62rem;
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .how_to {
-    padding: 3.125rem 0 3.125rem 0;
-    gap: 1.5625rem;
+    padding: 3.125rem 1.25rem;
+    margin: auto;
   }
 }
 .how_to_cards {
-  display: flex;
-  flex-direction: column;
-  gap: 1.62rem;
+  display: grid;
+  row-gap: 1.56rem;
 }
-@media only screen and (min-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .how_to_cards {
+    grid-template-columns: auto auto auto;
     width: 100%;
-    flex-direction: row;
-    gap: 1.5rem;
-    justify-content: center;
+    column-gap: 1.5rem;
   }
 }
 .card {
-  display: flex;
-  align-items: center;
-}
-@media only screen and (min-width: 1080px) {
-  .card {
-    width: 20.15538rem;
-  }
+  display: grid;
+  grid-template: auto/1.5rem auto;
 }
 .card_number {
-  display: flex;
-  position: absolute;
+  display: grid;
+  grid-column: 1;
+  grid-row: 1;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background-color: #9356DC;
   justify-content: center;
   align-items: center;
+  align-self: center;
+  z-index: 2;
 }
 .card_number span {
   font-size: 0.88638rem;
   color: #FFFFFF;
 }
 .card_content {
-  display: flex;
-  gap: 1.69rem;
-  margin-left: 0.78rem;
+  display: grid;
+  grid-column: 1/-1;
+  grid-row: 1;
   height: 4.52369rem;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
+  margin-left: 0.78rem;
   border-radius: 1.25rem;
   background: var(--Background, #F6F6F6);
   box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.15);
 }
-.card_content p {
-  width: 13.1875rem;
+.card_content_inside {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 0 2.38rem 0 2.09rem;
 }
-.card_content i {
-  margin-left: 2.09rem;
+.card_content_inside i {
   color: #7E7E7E;
 }
-.card_content .fa-store {
+.card_content_inside .fa-store {
   color: #9356DC;
 }
 
