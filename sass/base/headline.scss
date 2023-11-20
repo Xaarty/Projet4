@@ -5,39 +5,39 @@
     align-items: center;
     padding-bottom: 3.56rem;
 
-    @media (min-width: 768px) {
+    @include tablet {
         padding: 1.875rem 0 1.875rem 0;
         gap: 1.12rem;
     }
 
-        h1 {
+    h1 {
+    text-align: center;
+    height: 4.25rem;
+    margin: 2.4rem 3.62rem 0 2.62rem;
+
+    @include tablet {
+        font-size: 2.5rem;
+        height: 2.9375rem;
+        margin: 0;
+    }
+
+    }
+
+    p {
+        font-size: 1.125rem;
+        font-weight: 300;
         text-align: center;
-        height: 4.25rem;
-        margin: 2.4rem 3.62rem 0 2.62rem;
+        margin: 0 1.62rem 1.69rem 2.12rem;
 
-        @media (min-width: 768px) {
-            font-size: 2.5rem;
-            height: 2.9375rem;
+        @include tablet {
+            display: flex;
+            height: 2.875rem;
             margin: 0;
+            align-items: center;
         }
+    }
 
-        }
-
-        p {
-            font-size: 1.125rem;
-            font-weight: 300;
-            text-align: center;
-            margin: 0 1.62rem 1.69rem 2.12rem;
-
-            @media (min-width: 768px) {
-                display: flex;
-                height: 2.875rem;
-                margin: 0;
-                align-items: center;
-            }
-        }
-
-        a {
-            margin-bottom: 3.56rem;
-        }
+    a {
+        margin-bottom: 3.56rem;
+    }
 }
