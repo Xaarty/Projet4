@@ -18,17 +18,18 @@
     }
 }
 
-.button_exploration {
+.button_commander {
     width: 11.625rem;
+    justify-self: center;
 }
 
 .heart_button {
     position: relative;
     display: grid;
     width: 1.375rem;
+    height: 1.3125rem;
     background: $cardtxt-background;
     border: none;
-    height: fit-content;
 
     svg {
         display: block;
