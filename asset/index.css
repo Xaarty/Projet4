@@ -404,6 +404,7 @@ header form input {
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+  align-items: center;
 }
 .menu_title {
   display: flex;
@@ -535,7 +536,6 @@ header form input {
 .page_layout_menu_title {
   display: flex;
   width: 100%;
-  max-width: 39.625rem;
   justify-content: space-between;
   align-items: center;
   justify-content: center;
