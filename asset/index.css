@@ -426,7 +426,8 @@ header form input {
   width: 2.5rem;
 }
 .menu_card {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto;
   width: 100%;
   max-width: 39.625rem;
   padding: 0.94rem;
