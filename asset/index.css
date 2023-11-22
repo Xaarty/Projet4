@@ -482,35 +482,13 @@ header form input {
   display: grid;
   width: 1.375rem;
   height: 1.3125rem;
-  background: #FFFFFF;
+  background-color: #F6F6F6;
   border: none;
-}
-.heart_button svg {
-  display: block;
-}
-.heart_button svg {
-  position: absolute;
-  opacity: 1;
+  transition: 3s;
 }
 .heart_button svg:hover {
-  opacity: 0;
-}
-.heart_button svg + svg {
-  opacity: 0;
-}
-.heart_button svg + svg:hover {
-  opacity: 1;
-}
-.heart_button svg + svg {
-  display: none;
-}
-.heart_button:hover svg {
-  position: relative;
-  display: none;
-}
-.heart_button:hover svg + svg {
-  display: block;
-  position: absolute;
+  fill: url(#paint0_linear_142594_77);
+  border: none;
 }
 
 .page_layout {
@@ -544,6 +522,7 @@ header form input {
   align-items: center;
   justify-content: center;
   margin: 0 0.25rem;
+  gap: 1.5rem;
 }
 .page_layout_menu_title h1 {
   color: var(--Black, #101010);

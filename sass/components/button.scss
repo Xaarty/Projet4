@@ -28,43 +28,12 @@
     display: grid;
     width: 1.375rem;
     height: 1.3125rem;
-    background: $cardtxt-background;
+    background-color: $restaurant-menu-background;
     border: none;
+    transition: 3s;
 
-    svg {
-        display: block;
-    }
-    
-    svg {
-        position: absolute;
-        opacity: 1;
-
-        &:hover {
-            opacity: 0;
-        }
-    }
-
-    svg + svg {
-        opacity: 0;
-
-        &:hover {
-            opacity: 1;
-        }
-    }
-
-    svg + svg {
-        display: none;
-    }
-
-    &:hover {
-        svg {
-            position: relative;
-            display: none;
-        }
-
-        svg + svg {
-            display: block;
-            position: absolute;
-        }
+    svg:hover {
+        fill: url(#paint0_linear_142594_77);
+        border: none;
     }
 }
