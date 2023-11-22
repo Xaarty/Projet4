@@ -215,6 +215,9 @@ header nav .navbar_header_link a {
   justify-content: center;
   align-items: center;
 }
+header nav .navbar_header_link a#arrow {
+  display: flex;
+}
 header nav .navbar_header_link + .navbar_header_link {
   width: 12.3125rem;
   height: 2.25rem;

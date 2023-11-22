@@ -52,6 +52,10 @@ header {
                     height: 1.875rem;
                     justify-content: center;
                     align-items: center;
+
+                    &#arrow {
+                        display: flex;
+                    }
                 }
             }
 
@@ -89,4 +93,3 @@ header {
         }
     }
 }
-
