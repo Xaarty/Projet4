@@ -515,9 +515,17 @@ header form input {
   border: none;
   transition: 3s;
 }
-.heart_button svg:hover {
-  fill: url(#paint0_linear_142594_77);
-  border: none;
+.heart_button svg {
+  position: relative;
+}
+.heart_button svg + svg {
+  opacity: 1;
+  flex-shrink: 0;
+  position: absolute;
+  background-color: #FFFFFF;
+}
+.heart_button svg + svg:hover {
+  opacity: 0;
 }
 
 .page_layout {
@@ -585,6 +593,8 @@ header form input {
 }
 .page_layout_menu_title .heart_button {
   margin-right: 1.5rem;
+}
+.page_layout_menu_title .heart_button svg {
   background: #F6F6F6;
 }
 

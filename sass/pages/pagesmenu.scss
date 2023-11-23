@@ -63,7 +63,10 @@
 
             .heart_button {
                 margin-right: 1.5rem;
-                background: $restaurant-menu-background;
+                
+                svg {
+                    background: $restaurant-menu-background;
+                }
             }
         }
     }
