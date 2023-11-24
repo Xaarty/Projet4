@@ -31,9 +31,19 @@
     background-color: $cardtxt-background;
     border: none;
     transition: 3s;
-
-    svg:hover {
-        fill: url(#paint0_linear_142594_77);
-        border: none;
+    
+    svg {
+        position: relative;
     }
+    svg + svg {
+        opacity: 1;
+        flex-shrink: 0;
+        position: absolute;
+        background-color: $cardtxt-background;
+
+        &:hover {
+            opacity: 0;
+        }
+    }
+    
 }
