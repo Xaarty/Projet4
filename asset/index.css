@@ -431,6 +431,7 @@ header form input {
   height: 4.3125rem;
   max-width: 39.625rem;
   justify-content: space-between;
+  overflow: hidden;
   border-radius: 0.94019rem;
   background: #FFFFFF;
   box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.1);
@@ -448,6 +449,7 @@ header form input {
   display: grid;
   grid-template-columns: auto auto;
   width: 100%;
+  gap: 0.3125rem;
   padding: 0.94rem;
   justify-content: space-between;
   align-items: flex-end;
@@ -457,16 +459,21 @@ header form input {
   flex-direction: column;
   gap: 0.3125rem;
   align-items: baseline;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 .menu_card_layout_txt h3 {
   font-weight: 500;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
 }
 .menu_card_layout_txt p {
   font-size: 0.94019rem;
   font-weight: 300;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 1;
 }
 .menu_card_layout_button {
   display: flex;
@@ -598,22 +605,53 @@ header form input {
   background: #F6F6F6;
 }
 
-.menu:nth-child(2) {
-  animation: fadein 3s 0s normal;
+.animation1:nth-child(1) {
+  animation: fadein 3s 0s ease-in;
 }
-.menu:nth-child(3) {
-  animation: fadein 3s 0.5s normal;
+.animation1:nth-child(2) {
+  animation: fadein 3s 0.5s ease-in;
 }
-.menu:nth-child(4) {
-  animation: fadein 3s 1s normal;
+.animation1:nth-child(3) {
+  animation: fadein 3s 1s ease-in;
+}
+.animation1:nth-child(4) {
+  animation: fadein 3s 1.5s ease-in;
+}
+
+.animation2:nth-child(1) {
+  animation: fadein 3s 2s ease-in;
+}
+.animation2:nth-child(2) {
+  animation: fadein 3s 2.5s ease-in;
+}
+.animation2:nth-child(3) {
+  animation: fadein 3s 3s ease-in;
+}
+.animation2:nth-child(4) {
+  animation: fadein 3s 3.5s ease-in;
+}
+
+.animation3:nth-child(1) {
+  animation: fadein 3s 4s ease-in;
+}
+.animation3:nth-child(2) {
+  animation: fadein 3s 4.5s ease-in;
+}
+.animation3:nth-child(3) {
+  animation: fadein 3s 5s ease-in;
+}
+.animation3:nth-child(4) {
+  animation: fadein 3s 5.5s ease-in;
 }
 
 @keyframes fadein {
   0% {
-    width: 0%;
+    transform: scaleX(0);
+    transform-origin: left;
   }
   100% {
-    width: 100%;
+    transform: scaleX(1);
+    transform-origin: left;
   }
 }
 
