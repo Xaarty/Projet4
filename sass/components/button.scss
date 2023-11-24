@@ -30,7 +30,6 @@
     height: 1.3125rem;
     background-color: $cardtxt-background;
     border: none;
-    transition: 3s;
     
     svg {
         position: relative;
@@ -46,4 +45,34 @@
         }
     }
     
+}
+
+.menu_card {
+    &:hover {
+        button {
+            width: 60px;
+            height: auto;
+            transition: all 0.5s ease;
+            
+            svg {
+                width: 60.5px;
+                height: auto;
+            }
+        }
+    }
+}
+
+.button_card {
+    display: flex;
+    background: $cardtxt-background;
+    border-radius: 0 0.94019rem 0.94019rem 0;
+    border: none;
+    width: 0%;
+    height: 0%;
+    
+    svg {
+        flex-shrink: 0;
+        width: 0%;
+        height: 0%;
+    }
 }

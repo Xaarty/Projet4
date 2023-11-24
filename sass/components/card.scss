@@ -109,19 +109,6 @@
         box-shadow: 0px 4.01149px 15.0431px 0px rgba(0, 0, 0, 0.10);
         border: none;
 
-        &:hover {
-
-            button {
-                width: 60px;
-                height: auto;
-                
-                svg {
-                    width: 60.5px;
-                    height: auto;
-                }
-            }
-        }
-
         &_layout {
             display: grid;
             grid-template-columns: auto auto;
@@ -146,26 +133,6 @@
                     font-size: 0.94019rem;
                     font-weight: 300;
                     @include elipsis;
-                }
-            }
-    
-            &_price {
-    
-            }
-            
-            &_button {
-                display: flex;
-                background: $cardtxt-background;
-                border-radius: 0 0.94019rem 0.94019rem 0;
-                border: none;
-                width: 0%;
-                height: 0%;
-                transition: all 0.5s ease;
-                
-                svg {
-                    flex-shrink: 0;
-                    width: 0%;
-                    height: 0%;
                 }
             }
         }
