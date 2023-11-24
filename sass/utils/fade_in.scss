@@ -1,67 +1,79 @@
 .animation1 {
-
+    opacity: 0;
+    
+    
     &:nth-child(1) {
-        animation: fadein 2s 0s ease-in;
+        animation: fadein 2s 0s forwards ease-in;
     }
     
     &:nth-child(2) {
-        animation: fadein 2s 0.5s ease-in;
+        animation: fadein 2s 0.125s forwards ease-in;
     }
-
+    
     &:nth-child(3) {
-        animation: fadein 2s 1s ease-in;
+        animation: fadein 2s 0.25s forwards ease-in;
+    }
+    
+    &:nth-child(4) {
+        animation: fadein 2s 0.375s forwards ease-in;
     }
 
-    &:nth-child(4) {
-        animation: fadein 2s 1.5s ease-in;
+    &:nth-child(5) {
+        animation: fadein 2s 0.4375s forwards ease-in;
     }
 }
 
 .animation2 {
+    opacity: 0;
+    
 
-    &:nth-child(1) {
-        animation: fadein 2s 2s ease-in;
+    &:nth-child {
+        animation: fadein 2s 0.5s forwards ease-in;
     }
     
     &:nth-child(2) {
-        animation: fadein 2s 2.5s ease-in;
+        animation: fadein 2s 0.625s forwards ease-in;
     }
-
+    
     &:nth-child(3) {
-        animation: fadein 2s 3s ease-in;
+        animation: fadein 2s 0.75s forwards ease-in;
     }
-
+    
     &:nth-child(4) {
-        animation: fadein 2s 3.5s ease-in;
+        animation: fadein 2s 0.875s forwards ease-in;
     }
 }
 
 .animation3 {
+    opacity: 0;
+    
 
-    &:nth-child(1) {
-        animation: fadein 2s 4s ease-in;
+    &:nth-child {
+        animation: fadein 2s 1s forwards ease-in;
     }
     
     &:nth-child(2) {
-        animation: fadein 2s 4.5s ease-in;
+        animation: fadein 2s 1.125s forwards ease-in;
     }
-
+    
     &:nth-child(3) {
-        animation: fadein 2s 5s ease-in;
+        animation: fadein 2s 1.25s forwards ease-in;
     }
-
+    
     &:nth-child(4) {
-        animation: fadein 2s 5.5s ease-in;
+        animation: fadein 2s 1.375s forwards ease-in;
     }
 }
 
 @keyframes fadein {
     from {
+        opacity: 0;
         transform: scaleX(0);
         transform-origin: left;
     }
 
     to {
+        opacity: 1;
         transform: scaleX(1);
         transform-origin: left;
     }
