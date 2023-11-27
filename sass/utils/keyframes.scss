@@ -1,0 +1,62 @@
+@keyframes fadein {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+@keyframes loaderdisplay {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        display: none;
+    }
+}
+
+@keyframes loadmobile {
+    0% {
+        transform: rotate(0turn);
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+    
+    50% {
+        width: 2rem;
+        height: 2rem;
+    }
+
+    100% {
+        transform: rotate(1turn);
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+}
+
+@keyframes loaddesktop {
+    0% {
+        transform: rotate(0turn);
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+    
+    50% {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    100% {
+        transform: rotate(1turn);
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+}
