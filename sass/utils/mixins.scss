@@ -28,3 +28,20 @@
   overflow: hidden;
   -webkit-line-clamp: 1;
 }
+
+@mixin flex_center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin grid_center {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex_column {
+  display: flex;
+  flex-direction: column;
+}

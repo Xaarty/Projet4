@@ -46,7 +46,6 @@
         &_title {
             display: flex;
             width: 100%;
-            justify-content: space-between;
             align-items: center;
             justify-content: center;
             text-align: center;
@@ -58,7 +57,7 @@
                 font-family: Shrikhand;
                 font-size: 1.75rem;
                 font-style: normal;
-                font-weight: 400;
+                font-weight: $font_weight_regular;
                 line-height: normal;
             }
 

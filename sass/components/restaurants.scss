@@ -3,8 +3,7 @@
     background-color: $restaurant-menu-background;
 
     .restaurants {
-        display: flex;
-        flex-direction: column;
+        @include flex_column;
         max-width: 1080px;
         padding: 3.38rem 1.25rem 4.12rem 1.25rem;
         gap: 1.5rem;
@@ -14,8 +13,7 @@
         }
     
         &_article{
-            display: flex;
-            flex-direction: column;
+            @include flex_column;
             gap: 1.125rem;
     
             @include tablet {
@@ -37,8 +35,7 @@
                 }
         
                 a {
-                   display: flex;
-                   flex-direction: column;
+                    @include flex_column;
                    
                    .img_badge {
                         display: flex;
@@ -52,14 +49,12 @@
                         }
         
                         span {
-                            display: flex;
+                            @include flex_center;
                             position: absolute;
                             width: 5rem;
                             height: 1.8125rem;
                             margin: 0.82rem 0.75rem 0 0;
-                            justify-content: center;
-                            align-items: center;
-        
+                            
                             font-size: 0.875rem;
                             color: $badge_txt_color;
                             background-color: $third-color;

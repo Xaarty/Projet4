@@ -5,9 +5,7 @@
     right: 0;
     width: 100vw;
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex_center;
     background: $restaurant-menu-background;
     animation: loaderdisplay 0.45s 2.5s ease forwards;
 

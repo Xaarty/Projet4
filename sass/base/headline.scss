@@ -1,6 +1,5 @@
 .headline {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     background: $restaurant-menu-background;
     align-items: center;
     padding-bottom: 3.56rem;
@@ -25,7 +24,7 @@
 
     p {
         font-size: 1.125rem;
-        font-weight: 300;
+        font-weight: $font_weight_light;
         text-align: center;
         margin: 0 1.62rem 1.69rem 2.12rem;
 
