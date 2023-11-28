@@ -28,17 +28,24 @@
         transform: rotate(0turn);
         width: 4.5rem;
         height: 4.5rem;
+        opacity: 1;
+        border-width: 1.2rem;
     }
     
     50% {
         width: 2rem;
         height: 2rem;
+        border: 1rem solid $main-color;
+        opacity: 50%;
+        border-bottom-color: $restaurant-menu-background;
     }
 
     100% {
         transform: rotate(1turn);
         width: 4.5rem;
         height: 4.5rem;
+        opacity: 80%;
+        border-width: 1.2rem;
     }
 }
 
@@ -47,16 +54,23 @@
         transform: rotate(0turn);
         width: 6.5rem;
         height: 6.5rem;
+        opacity: 1;
+        border-width: 1.75rem;
     }
-    
+
     50% {
         width: 3rem;
         height: 3rem;
+        border: 1rem solid $main-color;
+        opacity: 50%;
+        border-bottom-color: $restaurant-menu-background;
     }
 
     100% {
         transform: rotate(1turn);
         width: 6.5rem;
         height: 6.5rem;
+        opacity: 80%;
+        border-width: 1.75rem;
     }
 }
