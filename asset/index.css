@@ -629,7 +629,7 @@ header form input {
 .animation2 {
   opacity: 0;
 }
-.animation2:nth-child {
+.animation2:nth-child(1) {
   animation: fadein 2s 0.5s forwards ease-in;
 }
 .animation2:nth-child(2) {
@@ -645,7 +645,7 @@ header form input {
 .animation3 {
   opacity: 0;
 }
-.animation3:nth-child {
+.animation3:nth-child(1) {
   animation: fadein 2s 1s forwards ease-in;
 }
 .animation3:nth-child(2) {

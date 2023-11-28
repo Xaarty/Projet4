@@ -27,7 +27,7 @@
     opacity: 0;
     
 
-    &:nth-child {
+    &:nth-child(1) {
         animation: fadein 2s 0.5s forwards ease-in;
     }
     
@@ -48,7 +48,7 @@
     opacity: 0;
     
 
-    &:nth-child {
+    &:nth-child(1) {
         animation: fadein 2s 1s forwards ease-in;
     }
     
