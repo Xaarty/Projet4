@@ -304,12 +304,12 @@ header form input {
 }
 .section_restaurants .restaurants_article article a .img_badge span {
   display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   width: 5rem;
   height: 1.8125rem;
   margin: 0.82rem 0.75rem 0 0;
-  justify-content: center;
-  align-items: center;
   font-size: 0.875rem;
   color: #008766;
   background-color: #99E2D0;
@@ -341,20 +341,21 @@ header form input {
     column-gap: 1.5rem;
   }
 }
+
 .card {
   display: grid;
   grid-template: auto/1.5rem auto;
 }
 .card_number {
   display: grid;
+  justify-content: center;
+  align-items: center;
   grid-column: 1;
   grid-row: 1;
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
   background-color: #9356DC;
-  justify-content: center;
-  align-items: center;
   align-self: center;
   z-index: 2;
 }
@@ -526,7 +527,7 @@ header form input {
 .button_card {
   display: flex;
   background: #FFFFFF;
-  border-radius: 0 0.94019rem 0.94019rem 0;
+  border-radius: 0 0.94019rem;
   border: none;
   width: 0%;
   height: 0%;
@@ -586,7 +587,6 @@ header form input {
 .page_layout_menu_title {
   display: flex;
   width: 100%;
-  justify-content: space-between;
   align-items: center;
   justify-content: center;
   text-align: center;

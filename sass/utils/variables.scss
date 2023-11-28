@@ -1,3 +1,4 @@
+// Variables couleurs
 $main-color: #9356DC;
 $second-color: #FF79DA;
 $third-color: #99E2D0;
@@ -11,3 +12,9 @@ $badge_txt_color: #008766;
 $black: #000;
 $button_gradient: linear-gradient(180deg, $second-color -11.44%, $main-color 123.93%);
 $hover_gradiant: #100f0f26;
+
+// Variable épaisseur de texte
+$font_weight_light: 300;
+$font_weight_regular: 400;
+$font_weight_medium: 500;
+$font_weight_bold: 700;

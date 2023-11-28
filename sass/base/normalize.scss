@@ -6,8 +6,7 @@
 }
 
 body {
-    display: flex;
-    flex-direction: column;
+    @include flex_column;
     background-color: $cardtxt-background;
 }
 
@@ -23,7 +22,7 @@ h1 {
     font-family: Roboto;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $font_weight_bold;
     line-height: normal;
 }
 
@@ -31,7 +30,7 @@ h2 {
     font-family: Roboto;
     font-size: 1.5rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $font_weight_bold;
     line-height: normal;
 }
 
@@ -39,7 +38,7 @@ h3 {
     font-family: Roboto;
     font-size: 1.125rem;
     font-style: normal;
-    font-weight: 700;
+    font-weight: $font_weight_bold;
     line-height: normal;
 }
 
@@ -47,6 +46,6 @@ p {
     font-family: Roboto;
     font-size: 1rem;
     font-style: normal;
-    font-weight: 500;
+    font-weight: $font_weight_medium;
     line-height: normal;
 }

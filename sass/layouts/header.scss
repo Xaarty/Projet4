@@ -2,8 +2,7 @@ header {
     width: 100%;
     
     nav {
-        display: flex;
-        flex-direction: column;
+        @include flex_column;
         height: 3.9375rem;
         width: 100%;
 
@@ -88,7 +87,7 @@ header {
             border: none;
             background-color: $gps-background;
             font-size: 1rem;
-            font-weight: 500;
+            font-weight: $font_weight_medium;
             width: 6.8125rem;
         }
     }
