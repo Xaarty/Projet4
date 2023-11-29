@@ -1,7 +1,6 @@
 @import "./utils/mixins.scss";
 @import "./utils/variables.scss";
 @import "./base/normalize.scss";
-@import "./base/headline.scss";
 @import "./layouts/footer.scss";
 @import "./layouts/header.scss";
 @import "./components/restaurants.scss";
@@ -9,7 +8,6 @@
 @import "./components/card.scss";
 @import "./components/button.scss";
 @import "./components/pagesmenu.scss";
-@import "./utils/fade_in.scss";
-@import "./layouts/loader.scss";
+@import "./utils/animation.scss";
 @import "./utils/keyframes.scss";
 @import "./components/headline.scss";
