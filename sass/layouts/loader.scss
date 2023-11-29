@@ -7,7 +7,7 @@
     height: 100vh;
     @include flex_center;
     background: $restaurant-menu-background;
-    animation: loaderdisplay 0.45s 2.5s ease forwards;
+    
 
     &::after {
         content: '';
@@ -16,11 +16,11 @@
         border: 0.85rem solid $main-color;
         border-top-color: $third-color;
         border-radius: 50%;
-        animation: loadmobile 1.5s linear 2;
+        animation: loadmobile 1.5s linear infinite;
         
 
         @include desktop {
-            animation: loaddesktop 1.5s linear 2;
+            animation: loaddesktop 1.5s linear infinite;
         }
     }
 

@@ -670,7 +670,6 @@ header form input {
   justify-content: center;
   align-items: center;
   background: #F6F6F6;
-  animation: loaderdisplay 0.45s 2.5s ease forwards;
 }
 .loader::after {
   content: "";
@@ -679,11 +678,11 @@ header form input {
   border: 0.85rem solid #9356DC;
   border-top-color: #99E2D0;
   border-radius: 50%;
-  animation: loadmobile 1.5s linear 2;
+  animation: loadmobile 1.5s linear infinite;
 }
 @media only screen and (min-width: 1080px) {
   .loader::after {
-    animation: loaddesktop 1.5s linear 2;
+    animation: loaddesktop 1.5s linear infinite;
   }
 }
 .loader_inner {
@@ -734,6 +733,9 @@ header form input {
   50% {
     width: 2rem;
     height: 2rem;
+    border: 1.25rem solid #9356DC;
+    border-bottom-color: #99E2D0;
+    opacity: 75%;
   }
   100% {
     transform: rotate(1turn);
@@ -744,17 +746,20 @@ header form input {
 @keyframes loaddesktop {
   0% {
     transform: rotate(0turn);
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 8.5rem;
+    height: 8.5rem;
   }
   50% {
     width: 3rem;
     height: 3rem;
+    border: 1.75rem solid #9356DC;
+    border-bottom-color: #99E2D0;
+    opacity: 75%;
   }
   100% {
     transform: rotate(1turn);
-    width: 6.5rem;
-    height: 6.5rem;
+    width: 8.5rem;
+    height: 8.5rem;
   }
 }
 

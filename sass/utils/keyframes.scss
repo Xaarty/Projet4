@@ -33,6 +33,9 @@
     50% {
         width: 2rem;
         height: 2rem;
+        border: 1.25rem solid $main-color;
+        border-bottom-color: $third-color;
+        opacity: 75%;
     }
 
     100% {
@@ -45,18 +48,21 @@
 @keyframes loaddesktop {
     0% {
         transform: rotate(0turn);
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 8.5rem;
+        height: 8.5rem;
     }
     
     50% {
         width: 3rem;
         height: 3rem;
+        border: 1.75rem solid $main-color;
+        border-bottom-color: $third-color;
+        opacity: 75%;
     }
 
     100% {
         transform: rotate(1turn);
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 8.5rem;
+        height: 8.5rem;
     }
 }
