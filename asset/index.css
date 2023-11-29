@@ -670,6 +670,7 @@ header form input {
   justify-content: center;
   align-items: center;
   background: #F6F6F6;
+  animation: loaderdisplay 0.45s 2.5s ease forwards;
 }
 .loader::after {
   content: "";
@@ -678,11 +679,11 @@ header form input {
   border: 0.85rem solid #9356DC;
   border-top-color: #99E2D0;
   border-radius: 50%;
-  animation: loadmobile 1.5s linear infinite;
+  animation: loadmobile 1.5s linear 2;
 }
 @media only screen and (min-width: 1080px) {
   .loader::after {
-    animation: loaddesktop 1.5s linear infinite;
+    animation: loaddesktop 1.5s linear 2;
   }
 }
 .loader_inner {
