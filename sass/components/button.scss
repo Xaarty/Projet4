@@ -51,12 +51,10 @@
     &:hover {
         button {
             width: 60px;
-            height: auto;
             transition: all 0.5s ease;
             
             svg {
                 width: 60.5px;
-                height: auto;
             }
         }
     }
@@ -68,11 +66,9 @@
     border-radius: 0 0.94019rem;
     border: none;
     width: 0%;
-    height: 0%;
     
     svg {
         flex-shrink: 0;
         width: 0%;
-        height: 0%;
     }
 }

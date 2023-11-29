@@ -473,12 +473,10 @@ header form input {
 
 .menu_card:hover button {
   width: 60px;
-  height: auto;
   transition: all 0.5s ease;
 }
 .menu_card:hover button svg {
   width: 60.5px;
-  height: auto;
 }
 
 .button_card {
@@ -487,12 +485,10 @@ header form input {
   border-radius: 0 0.94019rem;
   border: none;
   width: 0%;
-  height: 0%;
 }
 .button_card svg {
   flex-shrink: 0;
   width: 0%;
-  height: 0%;
 }
 
 .page_layout {
@@ -631,8 +627,8 @@ header form input {
 }
 .loader::after {
   content: "";
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   border: 0.85rem solid #9356DC;
   border-top-color: #99E2D0;
   border-radius: 50%;

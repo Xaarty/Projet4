@@ -14,6 +14,12 @@
       @content;
     }
 }
+  
+@mixin max1440() {
+    @media only screen and (max-width: 1440px) {
+      @content;
+    }
+}
 
 @mixin elipsis {
   
