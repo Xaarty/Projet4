@@ -52,10 +52,6 @@
         button {
             width: 60px;
             transition: all 0.5s ease;
-            
-            svg {
-                width: 60.5px;
-            }
         }
     }
 }
@@ -66,9 +62,9 @@
     border-radius: 0 0.94019rem;
     border: none;
     width: 0%;
+    transition: all 0.5s ease;
     
     svg {
         flex-shrink: 0;
-        width: 0%;
     }
 }

@@ -475,9 +475,6 @@ header form input {
   width: 60px;
   transition: all 0.5s ease;
 }
-.menu_card:hover button svg {
-  width: 60.5px;
-}
 
 .button_card {
   display: flex;
@@ -485,10 +482,10 @@ header form input {
   border-radius: 0 0.94019rem;
   border: none;
   width: 0%;
+  transition: all 0.5s ease;
 }
 .button_card svg {
   flex-shrink: 0;
-  width: 0%;
 }
 
 .page_layout {
