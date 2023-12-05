@@ -346,6 +346,7 @@ header form input {
 .restaurant_card {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   padding: 1rem 1.56rem 0.75rem 0.81rem;
 }
 .restaurant_card a {
